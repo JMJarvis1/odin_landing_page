@@ -36,11 +36,11 @@ h1,
 h1 {
   font-size: 3rem;
   font-weight: 900;
-  margin: 0rem 0rem 0.5rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
 }
 
 .h1-sub {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   max-width: 40ch;
 }
 
@@ -50,6 +50,13 @@ h2 {
   font-weight: 900;
   color: #1f2937;
   margin: 2rem 0rem 3rem;
+}
+
+h3 {
+  color: #f9faf8;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
 }
 
 header,
@@ -84,7 +91,7 @@ header * ul {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
-  padding: 7em 12vw;
+  padding: 7vw 12vw;
 }
 
 .welcome-left {
@@ -171,13 +178,6 @@ header * ul {
   background-color: #3882f6;
   color: #1f2937;
   padding: 2rem 15vw;
-}
-
-h3 {
-  color: #f9faf8;
-  font-size: 1.125rem;
-  font-weight: 700;
-  margin: 0.5rem 0;
 }
 
 .banner-left p {
