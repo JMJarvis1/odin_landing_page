@@ -15,40 +15,47 @@ body {
 **************/
 
 a,
-.welcome-left .h1-sub {
-  text-decoration: none;
+.h1-sub {
   color: #e5e7eb;
   font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
   margin: 0;
 }
 
-button,
 h1,
-.call-to-action {
+#button {
   color: #f9faf8;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: 900;
-  margin: 0;
+  margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.h1-sub {
+  margin-bottom: 0.5rem;
+  max-width: 40ch;
 }
 
 h2 {
   font-size: 2rem;
+  text-align: center;
   font-weight: 900;
   color: #1f2937;
-  margin: 2rem;
+  margin: 2rem 0rem 3rem;
 }
 
 header,
 .welcome,
 footer {
   background-color: #1f2937;
-  /* width: 100%; */
 }
 
 /* ***********
@@ -58,17 +65,13 @@ footer {
 header {
   display: flex;
   justify-content: space-between;
-  gap: 2em;
-  color: #f9faf8;
   align-items: center;
   padding: 1rem 12vw 0rem 12vw;
 }
 
 header *.logo {
-  display: flex;
   font-size: 1.5rem;
   color: #f9faf8;
-  margin: 0;
 }
 
 header * ul {
@@ -87,29 +90,30 @@ header * ul {
 .welcome-left {
   flex: 0 1 auto;
   flex-flow: wrap;
-  max-width: 39vw;
   min-width: 15rem;
   min-height: 10vw;
+  margin: 0.5rem 0rem;
 }
 
 .welcome-image {
   max-width: 75vw;
   height: auto;
+  margin: 0.5rem 0rem;
 }
 .random-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   min-height: 30rem;
+  padding: 0rem 0.5rem;
 }
 
 .image-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 7vw;
 }
 
 .image-group {
@@ -127,29 +131,30 @@ header * ul {
 
 .inspirational-quote {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #e5e7eb;
   height: 30rem;
   margin-top: 1rem;
+  padding: 0.5rem;
+  max-height: fit-content;
 }
 
 .quote-body {
   display: flex;
-  flex: 0 1 auto;
   flex-direction: column;
   font-size: 2rem;
   font-weight: 100;
   font-style: italic;
-  max-width: 40ch;
-  min-width: 200px;
+  width: 40ch;
+  max-width: 80vw;
 }
 
 .quote-body .quote-signature {
   align-self: flex-end;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .banner-container {
@@ -164,23 +169,20 @@ header * ul {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #3882f6;
-  color: white;
-  padding: 2rem 8vw;
+  color: #1f2937;
+  padding: 2rem 15vw;
 }
 
-.banner-left {
-  padding-right: 8rem;
-}
-
-.banner-left p {
-  color: #e5e7eb;
-}
-
-.banner-left .call-to-action {
-  flex-wrap: nowrap;
+h3 {
   color: #f9faf8;
   font-size: 1.125rem;
   font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.banner-left p {
+  padding-right: 8rem;
+  color: #e5e7eb;
 }
 
 .banner-right {
@@ -205,7 +207,6 @@ button {
   height: fit-content;
   padding: 0.25rem 1.5rem;
   border-radius: 0.5rem;
-  margin-top: 0.5rem;
 }
 
 .banner-right button {
